@@ -1,0 +1,8 @@
+<button
+  class="btn btn-primary mb-3"
+  hx-get="{% url 'pages:button-select' position %}"
+  hx-swap="outerHTML"
+  hx-vals='{"button-text": "{{ button_text }}"}'
+>
+  {{ button_text }}
+</button>

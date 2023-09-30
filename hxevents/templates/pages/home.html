@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Home | hxevents{% endblock title %}
+
+{% block content %}
+    <div class="container">
+        <h1>Welcome to project hxevents</h1>
+        <div class="d-flex flex-column align-items-center">
+            {% include "pages/fragments/unselected-button.html" with button_text="Bouton 1" position=0 %}
+            {% include "pages/fragments/unselected-button.html" with button_text="Bouton 2" position=0 %}
+            {% include "pages/fragments/unselected-button.html" with button_text="Bouton 3" position=0 %}
+        </div>
+    </div>
+{% endblock content %}«

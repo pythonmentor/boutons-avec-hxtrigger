@@ -1,0 +1,9 @@
+<button
+  class="btn btn-success mb-3"
+  hx-get="{% url 'pages:button-unselect' position %}"
+  hx-trigger="click, watch-button-selected from:body"
+  hx-swap="outerHTML"
+  hx-vals='{"button-text": "{{ button_text }}"}'
+>
+{{ button_text }}
+</button>
